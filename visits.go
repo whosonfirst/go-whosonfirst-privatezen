@@ -8,8 +8,8 @@ type Visit struct {
 	Id              int64
 	Name            string
 	Date            *time.Time
-	Latitude        Float64
-	Longitude       Float64
+	Latitude        float64
+	Longitude       float64
 	WOFId           *WOFPlace
 	NeighbourhoodId *WOFPlace
 	MacrohoodId     *WOFPlace

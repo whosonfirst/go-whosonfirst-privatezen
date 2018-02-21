@@ -13,7 +13,8 @@ self:   prep
 	cp *.go src/github.com/whosonfirst/go-whosonfirst-privatezen/
 	cp -r vendor/* src/
 
-deps:   
+deps:
+	@GOPATH=$(GOPATH) go get -u "github.com/whosonfirst/go-whosonfirst-geojson-v2"
 	@GOPATH=$(GOPATH) go get -u "github.com/whosonfirst/go-whosonfirst-placetypes"
 
 vendor-deps: rmdeps deps

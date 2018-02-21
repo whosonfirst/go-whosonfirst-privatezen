@@ -38,7 +38,7 @@ func IsValidTripStatusId(id int64) bool {
 }
 
 type TripStatus struct {
-	Id    int
+	Id    int64
 	Label string
 }
 

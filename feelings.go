@@ -39,6 +39,6 @@ func IsValidFeelingId(id int64) bool {
 }
 
 type Feeling struct {
-	Id    int
+	Id    int64
 	Label string
 }
