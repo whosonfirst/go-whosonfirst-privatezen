@@ -1,7 +1,7 @@
 package privatezen
 
 import (
-        "errors"
+	"errors"
 	"github.com/whosonfirst/go-whosonfirst-geojson-v2"
 	"github.com/whosonfirst/go-whosonfirst-geojson-v2/properties/whosonfirst"
 	"github.com/whosonfirst/go-whosonfirst-placetypes"
