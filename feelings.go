@@ -19,17 +19,17 @@ func init() {
 
 func IsValidFeeling(f string) bool {
 
-	valid = false
+	valid := false
 
 	for id, label := range feelings {
 
 		if label == f {
-			value = true
+			valid = true
 			break
 		}
 	}
 
-	return value
+	return valid
 }
 
 func IsValidFeelingId(id int64) bool {

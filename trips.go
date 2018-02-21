@@ -18,17 +18,17 @@ func init() {
 
 func IsValidTripStatus(s string) bool {
 
-	valid = false
+	valid := false
 
 	for id, label := range states {
 
 		if s == label {
-			value = true
+			valid = true
 			break
 		}
 	}
 
-	return value
+	return valid
 }
 
 func IsValidTripStatusId(id int64) bool {

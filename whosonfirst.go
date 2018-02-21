@@ -1,13 +1,14 @@
 package privatezen
 
 import (
+        "errors"
 	"github.com/whosonfirst/go-whosonfirst-geojson-v2"
 	"github.com/whosonfirst/go-whosonfirst-geojson-v2/properties/whosonfirst"
 	"github.com/whosonfirst/go-whosonfirst-placetypes"
 	"strconv"
 )
 
-func WOFPlaceFromFeature(f geojson.Feature) (*WOFPlaces, error) {
+func WOFPlaceFromFeature(f geojson.Feature) (*WOFPlace, error) {
 
 	id := whosonfirst.Id(f)
 
@@ -15,7 +16,7 @@ func WOFPlaceFromFeature(f geojson.Feature) (*WOFPlaces, error) {
 		return nil, errors.New("Invalid WOF ID")
 	}
 
-	str_pt := whosonfirst.Placeptype(f)
+	str_pt := whosonfirst.Placetype(f)
 
 	if !placetypes.IsValidPlacetype(str_pr) {
 		return nil, errors.New("Invalid WOF placetype")
