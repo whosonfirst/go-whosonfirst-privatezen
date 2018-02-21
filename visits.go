@@ -10,12 +10,12 @@ type Visit struct {
 	Date            *time.Time
 	Latitude        Float64
 	Longitude       Float64
-	WOFId           *Whosonfirst
-	NeighbourhoodId *Whosonfirst
-	MacrohoodId     *Whosonfirst
-	LocalityId      *Whosonfirst
-	MetroareaId     *Whosonfirst
-	RegionId        *Whosonfirst
-	CountryId       *Whosonfirst
+	WOFId           *WOFPlace
+	NeighbourhoodId *WOFPlace
+	MacrohoodId     *WOFPlace
+	LocalityId      *WOFPlace
+	MetroareaId     *WOFPlace
+	RegionId        *WOFPlace
+	CountryId       *WOFPlace
 	FeelingsId      *Feeling
 }

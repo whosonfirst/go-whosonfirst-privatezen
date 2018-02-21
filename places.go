@@ -5,7 +5,7 @@ import (
 )
 
 type Place struct {
-	Id      *Whosonfirst
+	Id      *WOFPlace
 	Body    string
 	Created *time.Time
 }

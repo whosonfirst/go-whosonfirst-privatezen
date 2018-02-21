@@ -13,6 +13,6 @@ type List struct {
 
 type ListItem struct {
 	List  *List
-	Foo   *Whosonfirst
+	Foo   *WOFPlace
 	Index int // position
 }
