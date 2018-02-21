@@ -21,7 +21,7 @@ func IsValidFeeling(f string) bool {
 
 	valid := false
 
-	for id, label := range feelings {
+	for _, label := range feelings {
 
 		if label == f {
 			valid = true

@@ -20,7 +20,7 @@ func IsValidTripStatus(s string) bool {
 
 	valid := false
 
-	for id, label := range states {
+	for _, label := range states {
 
 		if s == label {
 			valid = true
