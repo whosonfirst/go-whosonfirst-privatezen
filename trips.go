@@ -8,7 +8,7 @@ var states map[int64]string
 
 func init() {
 
-	states = map[int64]string{
+	states = map[int64]string{}{
 		0: "unknown",
 		1: "tentative",
 		2: "confirmed",

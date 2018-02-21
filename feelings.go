@@ -4,7 +4,7 @@ var feelings map[int64]string
 
 func init() {
 
-	feelings = map[int]string{
+	feelings = map[int64]string{}{
 		0: "i've been there",
 		1: "i was there",
 		2: "i want to go there",
