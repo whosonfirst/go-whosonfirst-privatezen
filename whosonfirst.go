@@ -18,11 +18,11 @@ func WOFPlaceFromFeature(f geojson.Feature) (*WOFPlace, error) {
 
 	str_pt := whosonfirst.Placetype(f)
 
-	if !placetypes.IsValidPlacetype(str_pr) {
+	if !placetypes.IsValidPlacetype(str_pt) {
 		return nil, errors.New("Invalid WOF placetype")
 	}
 
-	pt, err := placetypes.GetPlacetypeByName(str_pl)
+	pt, err := placetypes.GetPlacetypeByName(str_pt)
 
 	if err != nil {
 		return nil, err
@@ -42,5 +42,5 @@ type WOFPlace struct {
 }
 
 func (w *WOFPlace) String() string {
-	return strconv.Itoa(w.Id)
+	return strconv.FormatInt(w.Id, 10)
 }
